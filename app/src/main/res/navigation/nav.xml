@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.utkiteam.App.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_pgrogressFragment"
+            app:destination="@id/pgrogressFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_firstLvlFragment2"
+            app:destination="@id/firstLvlFragment2" />
+        <action
+            android:id="@+id/action_mapFragment_to_secondLvlFragment"
+            app:destination="@id/secondLvlFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_thirdLvlFragment"
+            app:destination="@id/thirdLvlFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_fourLvlFragment"
+            app:destination="@id/fourLvlFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+        <action
+            android:id="@+id/action_mapFragment_self"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pgrogressFragment"
+        android:name="com.example.utkiteam.App.PgrogressFragment"
+        android:label="fragment_pgrogress"
+        tools:layout="@layout/fragment_pgrogress">
+        <action
+            android:id="@+id/action_pgrogressFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_pgrogressFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.utkiteam.App.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_pgrogressFragment"
+            app:destination="@id/pgrogressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstLvlFragment2"
+        android:name="com.example.utkiteam.App.FirstLvlFragment"
+        android:label="fragment_first_lvl"
+        tools:layout="@layout/fragment_first_lvl">
+        <action
+            android:id="@+id/action_firstLvlFragment2_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_firstLvlFragment2_to_instuctionFragment"
+            app:destination="@id/instuctionFragment" />
+        <action
+            android:id="@+id/action_firstLvlFragment2_to_rulesWorkingFragment"
+            app:destination="@id/rulesWorkingFragment" />
+        <action
+            android:id="@+id/action_firstLvlFragment2_to_rulesEmergencySituationFragment2"
+            app:destination="@id/rulesEmergencySituationFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondLvlFragment"
+        android:name="com.example.utkiteam.App.secondLvlFragment"
+        android:label="fragment_second_lvl"
+        tools:layout="@layout/fragment_second_lvl">
+        <action
+            android:id="@+id/action_secondLvlFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdLvlFragment"
+        android:name="com.example.utkiteam.App.thirdLvlFragment"
+        android:label="fragment_third_lvl"
+        tools:layout="@layout/fragment_third_lvl">
+        <action
+            android:id="@+id/action_thirdLvlFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourLvlFragment"
+        android:name="com.example.utkiteam.App.fourLvlFragment"
+        android:label="fragment_four_lvl"
+        tools:layout="@layout/fragment_four_lvl">
+        <action
+            android:id="@+id/action_fourLvlFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fiveFragment"
+        android:name="com.example.utkiteam.App.fiveFragment"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five">
+        <action
+            android:id="@+id/action_fiveFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instuctionFragment"
+        android:name="com.example.utkiteam.App.InstuctionFragment"
+        android:label="fragment_instuction"
+        tools:layout="@layout/fragment_instuction">
+        <action
+            android:id="@+id/action_instuctionFragment_to_firstLvlFragment2"
+            app:destination="@id/firstLvlFragment2" />
+        <action
+            android:id="@+id/action_instuctionFragment_to_instuctionFragment_test_1"
+            app:destination="@id/instuctionFragment_test_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesWorkingFragment"
+        android:name="com.example.utkiteam.App.RulesWorkingFragment"
+        android:label="fragment_rules_working"
+        tools:layout="@layout/fragment_rules_working">
+        <action
+            android:id="@+id/action_rulesWorkingFragment_to_firstLvlFragment2"
+            app:destination="@id/firstLvlFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesEmergencySituationFragment2"
+        android:name="com.example.utkiteam.App.RulesEmergencySituationFragment"
+        android:label="RulesEmergencySituationFragment">
+        <action
+            android:id="@+id/action_rulesEmergencySituationFragment2_to_firstLvlFragment2"
+            app:destination="@id/firstLvlFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/instuctionFragment_test_1"
+        android:name="com.example.utkiteam.App.instuctionFragment_test_1"
+        android:label="fragment_instuction_test_1"
+        tools:layout="@layout/fragment_instuction_test_1" />
+</navigation>
